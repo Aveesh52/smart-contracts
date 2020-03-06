@@ -1,6 +1,5 @@
 pragma solidity 0.5.11;
 
-
 interface IERC20 {
     function transfer(address _to, uint _value) external returns (bool success);
     function transferFrom(address _from, address _to, uint _value) external returns (bool success);
@@ -15,4 +14,3 @@ interface IERC20 {
 
 // to support backward compatible contract name -- so function signature remains same
 contract ERC20 is IERC20 {}
-
